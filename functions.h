@@ -6,10 +6,11 @@
 
 using namespace std;
 using namespace cv;
+using namespace cv::cuda;
 
 
 
-void URUgly(Mat f, CascadeClassifier d, string nom);		//censors your face, f is the current frame, d is the face detector
+void URUgly(Mat f, Ptr<cuda::CascadeClassifier> d, string nom);		//censors your face, f is the current frame, d is the face detector
 
 
 

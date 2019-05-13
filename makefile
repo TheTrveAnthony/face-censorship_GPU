@@ -2,5 +2,5 @@
 # include openCV
 cv = `pkg-config --cflags --libs opencv`
 
-cen : censure.cpp functions.cpp
-		g++ $^ $(cv) -g -o $@ 
+cen : censure.cpp func.cpp
+		nvcc $^ $(cv) -g -o $@ 
